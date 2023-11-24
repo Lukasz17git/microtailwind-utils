@@ -1,0 +1,47 @@
+{
+   "name": "microtailwind-utils",
+   "version": "0.0.0",
+   "description": "Package to add utilities for microtailwind.",
+   "keywords": [
+      "microtailwind",
+      "microtailwindcss",
+      "micro tailwind",
+      "micro tailwindcss",
+      "tailwind",
+      "tailwindcss",
+      "shorter tailwind",
+      "shorter tailwindcss"
+   ],
+   "author": "Lukasz Maraj",
+   "license": "MIT",
+   "private": false,
+   "main": "dist/index.js",
+   "module": "dist/index.mjs",
+   "types": "dist/index.d.ts",
+   "files": [
+      "dist",
+      "types.d.ts",
+      "abreviations.js",
+      "tailwind.config.example.js",
+      "README.md",
+      "LICENSE"
+   ],
+   "scripts": {
+      "dev": "vitest",
+      "test": "vitest run",
+      "moveTypes": "node utils/moveFile.cjs",
+      "build_types": "tsup src/types.ts --dts-only && npm run moveTypes",
+      "build": "tsup src/index.ts --format cjs,esm --dts && npm run build_types",
+      "lint": "tsc",
+      "ci": "npm run lint && npm run test && npm run build",
+      "release": "npm run lint && npm run test && npm run build && changeset publish"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Lukasz17git/microTailwind.git"
+   },
+   "bugs": {
+      "url": "https://github.com/Lukasz17git/microTailwind/issues"
+   },
+   "homepage": "https://github.com/Lukasz17git/microTailwind#readme"
+}
