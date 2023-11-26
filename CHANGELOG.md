@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.1.0
+
+### Minor Changes
+
+- 7d805b3: added cn and cnx for performance reasons, fixed typing issues in create variants
+
 ## 0.0.1
 
 ### Patch Changes
