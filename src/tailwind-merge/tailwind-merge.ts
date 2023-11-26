@@ -41,4 +41,5 @@ const microtailwindMerge = (className: string) => {
    return goodClasses
 }
 
-export const cn = (...classes: ClassValue[]) => microtailwindMerge(clsx(...classes))
+export const cn = clsx
+export const cnx = (...classes: ClassValue[]) => microtailwindMerge(cn(...classes))
