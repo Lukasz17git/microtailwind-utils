@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.1.1
+
+### Patch Changes
+
+- cc88387: improved merge
+
 ## 0.1.0
 
 ### Minor Changes

@@ -1,6 +1,6 @@
 {
    "name": "microtailwind-utils",
-   "version": "0.1.0",
+   "version": "0.1.1",
    "description": "Package to add utilities for microtailwind.",
    "keywords": [
       "microtailwind",
