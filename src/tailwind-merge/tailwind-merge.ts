@@ -34,14 +34,13 @@ const microtailwindMerge = (className: string) => {
          }
          classes[existClass || utilityOrClass] = utilityOrClass
       } else {
-         // skip data-, group-, 
-         const doubleDot = utilityOrClass.indexOf(':')
-         if (doubleDot > index) continue
-
          const utility = utilityOrClass.slice(0, index + 1)
-         
-         // skip blacklist
-         if (blacklist.includes(utility)) continue
+
+         // keep all data-, group-, and blacklist
+         const doubleDot = utilityOrClass.indexOf(':')
+         if (doubleDot > index || blacklist.includes(utility)) {
+            classes[utilityOrClass] = utilityOrClass
+         }
 
          const isMixed: string | undefined = utilitiesToLookMap[utility]
          classes[isMixed || utility] = utilityOrClass

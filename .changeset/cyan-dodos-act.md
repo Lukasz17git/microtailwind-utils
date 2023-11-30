@@ -1,0 +1,5 @@
+---
+"microtailwind-utils": patch
+---
+
+fix
