@@ -17,6 +17,8 @@ const utilitiesToLookMap: Record<string, string> = {
    ["pos-"]: '__-position'
 }
 
+const blacklist = ['translate', 'animate']
+
 const microtailwindMerge = (className: string) => {
    const classes: Record<string, string> = {}
    for (const utilityOrClass of className.split(' ')) {
@@ -32,7 +34,15 @@ const microtailwindMerge = (className: string) => {
          }
          classes[existClass || utilityOrClass] = utilityOrClass
       } else {
+         // skip data-, group-, 
+         const doubleDot = utilityOrClass.indexOf(':')
+         if (doubleDot > index) continue
+
          const utility = utilityOrClass.slice(0, index + 1)
+         
+         // skip blacklist
+         if (blacklist.includes(utility)) continue
+
          const isMixed: string | undefined = utilitiesToLookMap[utility]
          classes[isMixed || utility] = utilityOrClass
       }
