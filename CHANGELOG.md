@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.1.2
+
+### Patch Changes
+
+- e71d0d4: fix
+
 ## 0.1.1
 
 ### Patch Changes
