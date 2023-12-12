@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.2.0
+
+### Minor Changes
+
+- 44d1bbb: added default option as undefined option for create variants
+
 ## 0.1.2
 
 ### Patch Changes
