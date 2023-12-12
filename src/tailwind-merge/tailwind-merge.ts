@@ -17,7 +17,7 @@ const utilitiesToLookMap: Record<string, string> = {
    ["pos-"]: '__-position'
 }
 
-const blacklist = ['translate', 'animate']
+const blacklist = ['translate', 'animate', 'text']
 
 const microtailwindMerge = (className: string) => {
    const classes: Record<string, string> = {}
