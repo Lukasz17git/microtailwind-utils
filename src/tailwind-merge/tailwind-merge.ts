@@ -23,7 +23,7 @@ const microtailwindMerge = (className: string) => {
    const classes: Record<string, string> = {}
    for (const utilityOrClass of className.split(' ')) {
       if (!utilityOrClass) continue
-      const index = utilityOrClass.indexOf('-')
+      const index = utilityOrClass.indexOf('-', 1)
       if (index === -1) {
          let existClass: string | boolean = false
          for (const [key, values] of classesLookMap) {
