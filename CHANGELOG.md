@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.2.1
+
+### Patch Changes
+
+- b5aff98: added "text" to blacklist
+
 ## 0.2.0
 
 ### Minor Changes
