@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.3.0
+
+### Minor Changes
+
+- 30fbd39: improved a lot cnx
+
 ## 0.2.2
 
 ### Patch Changes
