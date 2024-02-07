@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.3.1
+
+### Patch Changes
+
+- ccac755: improved type in create variant
+
 ## 0.3.0
 
 ### Minor Changes
