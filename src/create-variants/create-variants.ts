@@ -1,3 +1,3 @@
 export type VariantValues<T extends (v: any) => string | undefined> = Parameters<T>[0]
 export type VariantAsProp<VariantFn, PropertyName> = VariantFn extends (v: any) => string | undefined ? PropertyName extends string ? Partial<Record<PropertyName, Parameters<VariantFn>[0]>> : never : never
-export const createVariant = <T extends Record<string, string>>(variants: T) => (variantName?: keyof T) => variantName === undefined ? variants.default : variants[variantName]
+export const createVariant = <T extends Record<string, string> & { default?: string }>(variants: T) => (variantName?: keyof T) => variantName === undefined ? variants.default : variants[variantName]
