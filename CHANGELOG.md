@@ -1,5 +1,11 @@
 # microtailwind-utils
 
+## 0.3.3
+
+### Patch Changes
+
+- 4bf553c: Rewrote the README: `cnx` merges classes and `cn` is only clsx (the README said `cn` merged), with examples for `createVariant`, `VariantAsProp` and `VariantValues` (no code changes)
+
 ## 0.3.2
 
 ### Patch Changes
